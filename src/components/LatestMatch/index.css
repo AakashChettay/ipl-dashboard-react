@@ -1,0 +1,128 @@
+/* index.css */
+.latest-match-details-container {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: 'Bree Serif', serif;
+  width: 85vw;
+}
+
+.latest-match-competing-team-logo-row {
+  display: none;
+}
+
+.match-details-one {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.lm-competing-team-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.lm-date,
+.venue,
+.result-style {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.latest-match-competing-team-logo {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+}
+
+.match-details-two {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.lm-details-two-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.lm-details-two-para {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .det-one-row-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .latest-match-competing-team-logo-row {
+    display: block;
+    width: 120px;
+    height: 80px;
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .latest-match-details-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .match-details-one,
+  .match-details-two {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .latest-match-competing-team-logo {
+    display: none;
+  }
+
+  .match-details-two {
+    margin-top: 20px;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .det-one-row-con {
+    display: block;
+  }
+
+  .latest-match-competing-team-logo {
+    display: block;
+    width: 260px;
+    margin-left: 13vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .lm-competing-team-title {
+    font-size: 20px;
+  }
+
+  .lm-date,
+  .venue,
+  .result-style,
+  .lm-details-two-heading,
+  .lm-details-two-para {
+    font-size: 14px;
+  }
+}

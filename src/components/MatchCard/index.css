@@ -1,0 +1,85 @@
+/* Write your CSS here */
+.won {
+  color: green;
+}
+
+.lost {
+  color: red;
+}
+.match-card-container {
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(33% - 20px);
+  height: 40vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.team-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.detailed-result {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.short-result.won {
+  color: green;
+  font-weight: bold;
+}
+
+.short-result.lost {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .match-card-container {
+    width: calc(35% - 20px);
+    height: 40vh;
+  }
+
+  .team-title {
+    font-size: 16px;
+  }
+
+  .detailed-result,
+  .short-result {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .match-card-container {
+    width: 100%;
+  }
+
+  .team-logo {
+    width: 49px;
+  }
+
+  .team-title {
+    font-size: 14px;
+  }
+
+  .detailed-result,
+  .short-result {
+    font-size: 12px;
+  }
+}

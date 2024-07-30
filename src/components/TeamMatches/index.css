@@ -1,0 +1,52 @@
+/* src/components/TeamMatches/index.css */
+
+.team-matches-main-container {
+  background: linear-gradient(to right, #ff5733, #ffc300);
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.team-banner {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.recent-matches-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-matches-main-container {
+    padding: 15px;
+  }
+
+  .recent-matches-list {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-matches-main-container {
+    padding: 10px;
+  }
+}
